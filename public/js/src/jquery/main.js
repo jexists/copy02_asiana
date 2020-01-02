@@ -5,6 +5,11 @@
 	const wrap = $('#wrap');
 	const headBox = $('#headBox');
 	const footBox = $('#footBox');
+// reserveBox
+// inquiryBox
+// checkinBox
+// timeBox
+// eventBox
 
 	// wrap.append('<section id="viewBox"></section>');
 	// const viewBox = $('#viewBox');
