@@ -1,0 +1,106 @@
+/*main.css */
+#headBox { position: fixed; top: 0; left: 0; z-index: 50; width: 100%; height: 125px; }
+
+.innerarea { width: 1180px; height: 100%; margin: auto; }
+
+.upperhead { width: 100%; height: 40px; background-color: #f7f7f7; line-height: 40px; font-size: 13px; font-weight: bold; }
+
+.link_menu { float: left; width: 270px; height: 100%; }
+
+.link_menu li { float: left; position: relative; width: auto; height: 100%; margin: 0 10px; }
+
+.link_menu li:after, .link_menu li::after { content: " "; display: block; position: absolute; top: 0; bottom: 0; margin: auto; left: -10px; width: 0; height: 30%; border-right: 1px solid #777; }
+
+.link_menu li:last-child { margin-right: 0; }
+
+.link_menu li:first-child { margin-left: 0; }
+
+.link_menu li:first-child:after, .link_menu li:first-child::after { display: none; }
+
+.link_menu li a { display: block; width: 100%; height: 100%; }
+
+.link_menu li a:hover, .link_menu li a:focus { color: #D60815; text-decoration: underline; outline: none; }
+
+.utilty_menu { float: right; width: 180px; height: 100%; }
+
+.utilty_menu li { float: left; margin-right: 10px; }
+
+.utilty_menu li a:hover, .utilty_menu li a:focus { color: #D60815; text-decoration: underline; outline: none; }
+
+.lang_menu { float: right; width: 220px; height: 100%; }
+
+.lang_menu li { float: left; }
+
+.lang_menu li:nth-child(1) { position: relative; }
+
+.lang_menu li:nth-child(1) span { display: block; float: left; position: absolute; top: 12px; left: 65px; width: 18px; height: 18px; background-color: #fff; border-radius: 100%; }
+
+.lang_menu li:nth-child(1) span:before { content: " "; display: inline-block; position: absolute; top: 30%; left: 35%; border: solid #777; border-width: 0 2px 2px 0; padding: 2px; transform: rotate(45deg); }
+
+.lang_menu li:nth-child(1):before { content: " "; display: block; float: left; width: 20px; height: 20px; margin-top: 10px; margin-left: -12px; background: url("../../img/header/ico_earth.png") no-repeat 50% 50%/70% auto; }
+
+.lang_menu li:nth-child(1) a { display: block; width: 100%; height: 20px; padding-right: 10px; margin-top: 10px; margin-left: 10px; line-height: 20px; }
+
+.lang_menu li:nth-child(2) { position: relative; text-decoration: underline; margin-left: 50px; }
+
+.lang_menu li:nth-child(2):after, .lang_menu li:nth-child(2)::after { content: " "; display: block; position: absolute; top: 0; bottom: 0; margin: auto; left: -20px; width: 0; height: 30%; border-right: 1px solid #777; }
+
+.lang_menu li:nth-child(3) { margin-left: 10px; text-transform: capitalize; }
+
+.lowerhead { width: 100%; height: 85px; background-color: #fff; }
+
+h1 { float: left; width: 200px; height: 40px; margin-top: 22px; }
+
+h1 a { display: block; width: 100%; height: 100%; background: url("../../img/header/logo_header.png") no-repeat 50% 50%/90% auto; }
+
+h1 a:hover, h1 a:focus { background-size: contain; outline: none; }
+
+.gnb { float: left; width: 550px; height: 100%; margin-left: 100px; }
+
+.gnb ul { width: 100%; height: 100%; }
+
+.gnb ul li { float: left; width: 120px; height: 100%; margin: 0 5px; font-size: 18px; font-weight: bold; text-align: center; line-height: 85px; }
+
+.gnb ul li a { display: block; width: 100%; height: 100%; }
+
+.nav_etc { float: right; width: 170px; height: 85px; padding: 22px 0; box-sizing: border-box; }
+
+.nav_etc li { float: left; width: 45px; height: 40px; margin-left: 10px; }
+
+.nav_etc li:nth-child(1) a { background: url("../../img/header/gnb_ico_chatbot_on.png") no-repeat 50% 50%/auto 80%; }
+
+.nav_etc li:nth-child(2) a { background: url("../../img/header/gnb_ico_myasiana_on.png") no-repeat 50% 50%/auto 60%; }
+
+.nav_etc li:nth-child(3) a { background: url("../../img/header/gnb_ico_search_on.png") no-repeat 50% 50%/auto 60%; }
+
+.nav_etc li a { display: block; width: 100%; height: 100%; opacity: 0.6; }
+
+.nav_etc li a:hover, .nav_etc li a:focus { opacity: 1; outline: none; }
+
+#wrap { width: 100%; min-width: 1180px; height: auto; background-color: #fff; }
+
+#contentBox { width: 100%; height: auto; background-color: #fff; }
+
+#siteIndicator { position: fixed; bottom: 0; left: 0; z-index: 50; width: 100%; height: 50px; background-color: #fff; }
+
+#siteIndicator ul { width: 100%; height: 100%; font-size: 16px; }
+
+#siteIndicator ul li { float: left; width: 20%; height: 100%; border: 1px solid #ddd; box-sizing: border-box; }
+
+#siteIndicator ul li.on { padding: 5px; box-sizing: border-box; color: #fff; }
+
+#siteIndicator ul li.on a { background-color: #D60815; line-height: 40px; }
+
+#siteIndicator ul li a { display: block; width: 100%; height: 100%; line-height: 50px; text-align: center; font-weight: bold; }
+
+#reserveBox { width: 100%; height: 730px; background-color: #eee; }
+
+#inquiryBox { width: 100%; height: 1020px; background-color: #555; }
+
+#checkinBox { width: 100%; height: 1020px; background-color: #777; }
+
+#timeBox { width: 100%; height: 810px; background-color: #aaa; }
+
+#eventBox { width: 100%; height: 1670px; background-color: #eee; }
+
+#footBox { width: 100%; height: 480px; background-color: #bbb; }
