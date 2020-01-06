@@ -23,3 +23,5 @@
     border-width: 0 $bw $bw 0; padding: $p; transform:rotate($deg);}}
 
 @mixin footTx{font-size: 14px; font-weight: bold;}
+
+@mixin hover{color:$on; text-decoration: underline; outline: none;}

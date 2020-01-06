@@ -57,11 +57,45 @@ h1 a:hover, h1 a:focus { background-size: contain; outline: none; }
 
 .gnb { float: left; width: 550px; height: 100%; margin-left: 100px; }
 
-.gnb ul { width: 100%; height: 100%; }
+.gnb > ul { width: 100%; height: 100%; }
 
-.gnb ul li { float: left; width: 120px; height: 100%; margin: 0 5px; font-size: 18px; font-weight: bold; text-align: center; line-height: 85px; }
+.gnb > ul > li { float: left; width: 120px; height: 100%; margin: 0 5px; font-size: 18px; font-weight: bold; text-align: center; line-height: 85px; }
 
-.gnb ul li a { display: block; width: 100%; height: 100%; }
+.gnb > ul > li:nth-child(3) .gnb_conts > li { height: 420px; }
+
+.gnb > ul > li:nth-child(4) .gnb_conts > li { width: 22%; }
+
+.gnb > ul > li:nth-child(4) .gnb_conts > li .asiana_club { width: 200px; height: 280px; margin-left: 50px; margin-top: 30px; background: url("../../img/header/asiana_club.jpeg") no-repeat 50% 0%/auto 100%; }
+
+.gnb > ul > li:nth-child(4) .gnb_conts > li .asiana_club a { display: block; width: 100%; height: 100%; }
+
+.gnb > ul > li:nth-child(4) .gnb_conts > li .asiana_club a:hover, .gnb > ul > li:nth-child(4) .gnb_conts > li .asiana_club a:focus { background-color: rgba(0, 0, 0, 0.3); }
+
+.gnb > ul > li:nth-child(4) .gnb_conts > li:last-child:after { display: none; }
+
+.gnb > ul > li > a { display: block; width: 100%; height: 100%; }
+
+.gnb_conts { display: none; position: fixed; left: 0; top: 125px; width: 100%; min-width: 1180px; height: auto; margin: auto; border-top: 2px solid #777; box-sizing: border-box; background-color: #fff; }
+
+.gnb_conts li { position: relative; float: left; width: 17%; min-width: 200px; height: 350px; text-align: left; text-indent: 30px; }
+
+.gnb_conts li:first-child { margin-left: 5%; }
+
+.gnb_conts li:after { content: " "; position: absolute; top: 0; bottom: 0; left: 0; margin: auto; width: 0; height: 80%; border-right: 1px solid #bbb; }
+
+.gnb_conts li > div { display: block; width: auto; height: 40px; margin: 25px 0 15px; font-size: 16px; line-height: 40px; }
+
+.gnb_conts li > div a:hover, .gnb_conts li > div a:focus { font-size: 18px; outline: none; }
+
+.gnb_conts li > dl { width: 100%; height: auto; }
+
+.gnb_conts li > dl dt { width: auto; height: 40px; margin: 25px 0 15px; font-size: 16px; line-height: 40px; }
+
+.gnb_conts li > dl dt a:hover, .gnb_conts li > dl dt a:focus { font-size: 18px; outline: none; }
+
+.gnb_conts li > dl dd { width: auto; height: 30px; font-weight: normal; font-size: 14px; line-height: 30px; }
+
+.gnb_conts li > dl dd a:hover, .gnb_conts li > dl dd a:focus { color: #D60815; text-decoration: underline; outline: none; }
 
 .nav_etc { float: right; width: 170px; height: 85px; padding: 22px 0; box-sizing: border-box; }
 

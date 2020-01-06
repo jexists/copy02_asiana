@@ -15,10 +15,10 @@ $url: '../../img/header/';
   	&:first-child{margin-left: 0;}
   	&:first-child:after,&:first-child::after{display: none;}
     a{display: block;width: 100%; height: 100%;
-    &:hover,&:focus{color:$on; text-decoration: underline; outline: none;}}}}
+    &:hover,&:focus{@include hover;}}}}
  .utilty_menu{float: right; width: 180px; height: 100%;
   li{float: left; margin-right: 10px;
-  	a:hover,a:focus{color:$on; text-decoration: underline; outline: none;}}}
+  	a:hover,a:focus{@include hover;}}}
 
 //언어 
  .lang_menu{float: right; width: 220px; height: 100%;
@@ -52,14 +52,49 @@ $url: '../../img/header/';
  	a{display: block; width: 100%; height: 100%;
  		background:url($url + 'logo_header.png') no-repeat 50% 50% / 90% auto;
  	&:hover,&:focus{background-size: contain; outline: none;}}}
+//네비게이션
  .gnb {float: left;width: 550px; height: 100%;
  	margin-left:100px;
-  ul{width: 100%; height: 100%; 
-  	li{float: left; width: 120px; height: 100%;
+  >ul{width: 100%; height: 100%; 
+  	>li{float: left; width: 120px; height: 100%;
   		margin: 0 5px; 
   		font-size: 18px; font-weight: bold; 
   		text-align: center; line-height: 85px;
-  	a{display: block; width: 100%; height: 100%;}}}}
+    &:nth-child(3) .gnb_conts>li{height: 420px;}
+    &:nth-child(4) .gnb_conts>li{width: 22%;
+     .asiana_club{width: 200px; height: 280px; 
+      margin-left: 50px; margin-top: 30px;
+      background:url($url + 'asiana_club.jpeg') no-repeat 50% 0% /auto 100% ;
+      a{display: block; width: 100%; height: 100%;
+        &:hover,&:focus{background-color: rgba(0,0,0,0.3);}}}
+      &:last-child:after{display: none;}}
+  	>a{display: block; width: 100%; height: 100%;}}}}
+//네비게이션 내용
+ .gnb_conts{display:none; position: fixed; left: 0;top: 125px; 
+  width: 100%; min-width: 1180px; height: auto; margin: auto;
+  border-top: 2px solid #777; box-sizing: border-box;
+  background-color: $white;
+  li{position: relative;
+    float: left; width: 17%; min-width: 200px; height: 350px;
+    text-align: left; text-indent: 30px;
+    &:first-child{ margin-left: 5%;}
+    &:after{content: " "; position: absolute; 
+      top: 0; bottom:0 ;left: 0; margin: auto;
+      width: 0; height: 80%;
+      border-right: 1px solid #bbb;}
+    >div{display:block; width: auto; height: 40px; 
+      margin: 25px 0 15px;
+      font-size: 16px; line-height: 40px;
+      a:hover,a:focus{font-size: 18px; outline: none;}}
+    >dl{width: 100%; height: auto;
+      dt{width: auto; height: 40px;
+        margin: 25px 0 15px;  
+        font-size: 16px; line-height: 40px;
+        a:hover,a:focus{font-size: 18px; outline: none;}}
+      dd{width: auto; height: 30px; font-weight: normal;
+        font-size: 14px; line-height: 30px;
+        a:hover,a:focus{@include hover;}}}}}
+
  .nav_etc {float: right; width: 170px; height: 85px; 
  	padding: 22px 0; box-sizing:border-box;
   li{float: left; width: 45px; height: 40px;
