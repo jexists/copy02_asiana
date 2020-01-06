@@ -81,7 +81,7 @@ h1 a:hover, h1 a:focus { background-size: contain; outline: none; }
 
 .gnb_conts li:first-child { margin-left: 5%; }
 
-.gnb_conts li:after { content: " "; position: absolute; top: 0; bottom: 0; left: 0; margin: auto; width: 0; height: 80%; border-right: 1px solid #bbb; }
+.gnb_conts li:after { content: " "; position: absolute; top: 0; bottom: 0; left: 0; margin: auto; width: 0; height: 80%; border-right: 1px solid #ddd; }
 
 .gnb_conts li > div { display: block; width: auto; height: 40px; margin: 25px 0 15px; font-size: 16px; line-height: 40px; }
 
