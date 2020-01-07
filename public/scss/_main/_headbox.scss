@@ -68,12 +68,13 @@ $url: '../../img/header/';
       a{display: block; width: 100%; height: 100%;
         &:hover,&:focus{background-color: rgba(0,0,0,0.3);}}}
       &:last-child:after{display: none;}}
-  	>a{display: block; width: 100%; height: 100%;}}}}
+  	>a{display: block; width: 100%; height: 100%;
+      &:hover,&:focus{outline: none;}}}}}
 //네비게이션 내용
  .gnb_conts{display:none; position: fixed; left: 0;top: 125px; 
   width: 100%; min-width: 1180px; height: auto; margin: auto;
-  border-top: 2px solid #777; box-sizing: border-box;
-  background-color: $white;
+  border-top: 1px solid #777; box-sizing: border-box;
+  background-color: $white; box-shadow: 0 5px 10px #ddd;
   li{position: relative;
     float: left; width: 17%; min-width: 200px; height: 350px;
     text-align: left; text-indent: 30px;
@@ -94,7 +95,8 @@ $url: '../../img/header/';
       dd{width: auto; height: 30px; font-weight: normal;
         font-size: 14px; line-height: 30px;
         a:hover,a:focus{@include hover;}}}}}
-
+ .gnbline{display: none; position: relative; top:-4px; left: 0; z-index: 60;
+  width: 120px; height: 5px; background-color: $on;}
  .nav_etc {float: right; width: 170px; height: 85px; 
  	padding: 22px 0; box-sizing:border-box;
   li{float: left; width: 45px; height: 40px;
