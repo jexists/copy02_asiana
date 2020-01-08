@@ -1,11 +1,11 @@
 // main.js
 
 (function($){
-	const body = $('body');
-	const wrap = $('#wrap');
-	const headBox = $('#headBox');
-	const footBox = $('#footBox');
-// reserveBox
+	const body = $('body'),
+		  wrap = $('#wrap'),
+		  headBox = $('#headBox'),
+		  footBox = $('#footBox'),
+		  reserveBox = $('#reserveBox');
 // inquiryBox
 // checkinBox
 // timeBox
@@ -21,6 +21,7 @@
 	headBox.load('./temp/headbox.html',function(){
 		JsLink('headbox')
 	});
+	reserveBox.load('./temp/reservebox.html');
 
 	footBox.load('./temp/footbox.html');
 })(jQuery);

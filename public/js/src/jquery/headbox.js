@@ -1,16 +1,17 @@
 (function($){
  const wrap = $('#wrap');
  const gnb = $('.gnb');
- const gnbLi = gnb.children('ul').children('li');
+ const gnbLi = gnb.children('ul').children('li'); //
  const gnbLiLink = gnbLi.children('a');
  const gnbConts = gnb.find('.gnb_conts');
- const gnbLine = gnb.find('.gnbline');
- const gnbLiOff = [];
- const gnbOff = gnb.offset().left;
+ const gnbLine = gnb.find('.gnbline'); //
+ const gnbLiOff = []; //
+ const gnbOff = gnb.offset().left; //
 
  // console.log(gnbConts.length);
  console.log(gnbOff);
- for(let i=0; i<gnbLi.length; i++){
+
+ for(let i=0; i<gnbLi.length; i++){ //
  	gnbLiOff[i] = gnbLi.eq(i).offset().left;	
  }
  	console.log(gnbLiOff);
@@ -32,4 +33,5 @@
  	gnbConts.stop().slideUp();
  	gnbLine.stop().fadeOut();
  });
+ 
 })(jQuery);
