@@ -19,9 +19,11 @@
 	};
 
 	headBox.load('./temp/headbox.html',function(){
-		JsLink('headbox')
+		JsLink('headbox');
 	});
-	reserveBox.load('./temp/reservebox.html');
+	reserveBox.load('./temp/reservebox.html',function(){
+		JsLink('main_slide');
+	});
 
 	footBox.load('./temp/footbox.html');
 })(jQuery);

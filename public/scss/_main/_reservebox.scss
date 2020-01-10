@@ -2,7 +2,8 @@ $url: '../../img/main_slide/';
 .main_slide{width: 100%; height: 50vh; min-height: 300px; background-color: #f00;
  >ul{position:relative; width: 100%; height: 100%;
  >li{position:absolute; width: 100%; height: 100%;
- 	&:nth-child(1){background:url($url + 'slide_01.jpeg') no-repeat 50% 50% / 100% auto;}
+ 	&:nth-child(1){background:url($url + 'slide_01.jpeg') no-repeat 50% 50% / 100% auto;
+ 		z-index: 1;}
  	&:nth-child(2){background:url($url + 'slide_02.jpeg') no-repeat 50% 50% / 100% auto;}
  	&:nth-child(3){background:url($url + 'slide_03.jpeg') no-repeat 50% 50% / 100% auto;}
  	&:nth-child(4){background:url($url + 'slide_04.jpeg') no-repeat 50% 50% / 100% auto;}
@@ -12,9 +13,19 @@ $url: '../../img/main_slide/';
 
 .main_indicator{position: absolute; top:358px; left: 0; right: 0; margin: auto;	z-index: 20;
 	width: 154px; height: 22px; background-color: rgba(0,0,0,0.7);
- >ul{/* padding:5px; box-sizing:border-box; */
- >li{float:left; width: 12px; height: 12px; margin-left: 5px; margin-top: 5px;
+ >ul{float: left; margin-left: 3px;
+ >li{float:left; width: 12px; height: 12px; margin-left: 7px; margin-top: 5px;
  	border-radius:12px; background-color: $white;
-  &.slide_on{background-color: transparent; margin-top:3px; border: $on solid 2px;}}}}
+  &.slide_on{background-color: transparent; margin-top:3px; border: $on solid 2px;}
+  >a{display: block; width: 100%; height: 100%;}}}
+.ps{float:left; width: 12px; height: 12px;  margin-left: 7px; margin-top:5px;
+/*  background-color: $white; */
+ >div{width: 12px; height: 12px;
+  &.pause{position:relative; top:0; width: 12px; height: 12px; 
+   >button{display:block; width: 100%; height: 100%; background-color: #f00;}}
+  &.play{display: none; position:relative; top: 0; width: 12px; height: 12px;
+   >button{display:block; width: 100%; height: 100%; background-color: #00f;}}
+  >button{width: 100%; height: 100%;}}}}
 .quickreserve{position: absolute; top:0; left: 0; right: 0; margin: auto;
+	z-index: 10;
  	width: 1280px; height: 200px; margin-top:380px; background-color: $white;}

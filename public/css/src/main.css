@@ -149,7 +149,7 @@ h1 a:hover, h1 a:focus { background-size: contain; outline: none; }
 
 .main_slide > ul > li { position: absolute; width: 100%; height: 100%; }
 
-.main_slide > ul > li:nth-child(1) { background: url("../../img/main_slide/slide_01.jpeg") no-repeat 50% 50%/100% auto; }
+.main_slide > ul > li:nth-child(1) { background: url("../../img/main_slide/slide_01.jpeg") no-repeat 50% 50%/100% auto; z-index: 1; }
 
 .main_slide > ul > li:nth-child(2) { background: url("../../img/main_slide/slide_02.jpeg") no-repeat 50% 50%/100% auto; }
 
@@ -165,10 +165,26 @@ h1 a:hover, h1 a:focus { background-size: contain; outline: none; }
 
 .main_indicator { position: absolute; top: 358px; left: 0; right: 0; margin: auto; z-index: 20; width: 154px; height: 22px; background-color: rgba(0, 0, 0, 0.7); }
 
-.main_indicator > ul { /* padding:5px; box-sizing:border-box; */ }
+.main_indicator > ul { float: left; margin-left: 3px; }
 
-.main_indicator > ul > li { float: left; width: 12px; height: 12px; margin-left: 5px; margin-top: 5px; border-radius: 12px; background-color: #fff; }
+.main_indicator > ul > li { float: left; width: 12px; height: 12px; margin-left: 7px; margin-top: 5px; border-radius: 12px; background-color: #fff; }
 
 .main_indicator > ul > li.slide_on { background-color: transparent; margin-top: 3px; border: #D60815 solid 2px; }
 
-.quickreserve { position: absolute; top: 0; left: 0; right: 0; margin: auto; width: 1280px; height: 200px; margin-top: 380px; background-color: #fff; }
+.main_indicator > ul > li > a { display: block; width: 100%; height: 100%; }
+
+.main_indicator .ps { float: left; width: 12px; height: 12px; margin-left: 7px; margin-top: 5px; /*  background-color: $white; */ }
+
+.main_indicator .ps > div { width: 12px; height: 12px; }
+
+.main_indicator .ps > div.pause { position: relative; top: 0; width: 12px; height: 12px; }
+
+.main_indicator .ps > div.pause > button { display: block; width: 100%; height: 100%; background-color: #f00; }
+
+.main_indicator .ps > div.play { display: none; position: relative; top: 0; width: 12px; height: 12px; }
+
+.main_indicator .ps > div.play > button { display: block; width: 100%; height: 100%; background-color: #00f; }
+
+.main_indicator .ps > div > button { width: 100%; height: 100%; }
+
+.quickreserve { position: absolute; top: 0; left: 0; right: 0; margin: auto; z-index: 10; width: 1280px; height: 200px; margin-top: 380px; background-color: #fff; }

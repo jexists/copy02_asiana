@@ -9,13 +9,13 @@
  const gnbOff = gnb.offset().left; //
 
  // console.log(gnbConts.length);
- console.log(gnbOff);
+ //console.log(gnbOff);
 
  for(let i=0; i<gnbLi.length; i++){ //
  	gnbLiOff[i] = gnbLi.eq(i).offset().left;	
  }
- 	console.log(gnbLiOff);
-	console.log(gnbOff);
+ 	//console.log(gnbLiOff);
+	//console.log(gnbOff);
 
 
  gnbLiLink.on('mouseenter focus',function(){
