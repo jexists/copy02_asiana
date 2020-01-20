@@ -1,14 +1,16 @@
-$url: '../../img/main_slide/';
+$url: '../../img/';
+$slideUrl: '../../img/main_slide/';
+
 .main_slide{width: 100%; height: 50vh; min-height: 300px; background-color: #f00;
  >ul{position:relative; width: 100%; height: 100%;
  >li{position:absolute; width: 100%; height: 100%;
- 	&:nth-child(1){background:url($url + 'slide_01.jpeg') no-repeat 50% 50% / 100% auto;
+ 	&:nth-child(1){background:url($slideUrl + 'slide_01.jpeg') no-repeat 50% 50% / 100% auto;
  		z-index: 1;}
- 	&:nth-child(2){background:url($url + 'slide_02.jpeg') no-repeat 50% 50% / 100% auto;}
- 	&:nth-child(3){background:url($url + 'slide_03.jpeg') no-repeat 50% 50% / 100% auto;}
- 	&:nth-child(4){background:url($url + 'slide_04.jpeg') no-repeat 50% 50% / 100% auto;}
- 	&:nth-child(5){background:url($url + 'slide_05.jpeg') no-repeat 50% 50% / 100% auto;}
- 	&:nth-child(6){background:url($url + 'slide_06.jpeg') no-repeat 50% 50% / 100% auto;}
+ 	&:nth-child(2){background:url($slideUrl + 'slide_02.jpeg') no-repeat 50% 50% / 100% auto;}
+ 	&:nth-child(3){background:url($slideUrl + 'slide_03.jpeg') no-repeat 50% 50% / 100% auto;}
+ 	&:nth-child(4){background:url($slideUrl + 'slide_04.jpeg') no-repeat 50% 50% / 100% auto;}
+ 	&:nth-child(5){background:url($slideUrl + 'slide_05.jpeg') no-repeat 50% 50% / 100% auto;}
+ 	&:nth-child(6){background:url($slideUrl + 'slide_06.jpeg') no-repeat 50% 50% / 100% auto;}
  a{display: block; width: 100%; height: 100%;}}}}
 
 .main_indicator{position: absolute; top:358px; left: 0; right: 0; margin: auto;	z-index: 20;
@@ -26,6 +28,51 @@ $url: '../../img/main_slide/';
   &.play{display: none; position:relative; top: 0; width: 12px; height: 12px;
    >button{display:block; width: 100%; height: 100%; background-color: #00f;}}
   >button{width: 100%; height: 100%;}}}}
+
 .quickreserve{position: absolute; top:0; left: 0; right: 0; margin: auto;
-	z-index: 10;
+	z-index: 10; padding: 30px 40px; box-sizing:border-box;
  	width: 1280px; height: 200px; margin-top:380px; background-color: $white;}
+.tabwrap{width: 100%; height: 50px; margin-bottom: 30px; 
+  text-align:center; line-height: 50px;}
+ .mileage_use{float: left; width: 180px; height: 50px; margin-right: 50px;
+  background-color: $gray; border-radius: 5px;
+  font-weight: bold; 
+ p{float:left; width: 65%; text-align: center;}
+ .mileage_slide{position:relative; float:left; width: 27%; height: 16px; margin:17px 4% 0 0;
+  border-radius: 5px; box-shadow: inset 0 0 1px #aaa; background-color: #ddd; cursor: pointer;
+ #mileage_check{overflow:hidden; position: absolute; width: 0; height: 0; border:0}
+ .slider{position:absolute; top: -5px; left: 0; width: 30px; height: 24px; background-color: $white;
+  border-radius: 5px; border: 1px solid #ddd; box-shadow: 0 0 5px #ccc;  
+  text-transform: uppercase; line-height: 24px; font-size: 12px; font-weight: normal;}}}
+ .way{float: left; font-weight: bold; border-radius: 5px; overflow: hidden;
+  li{float: left; width: 105px; height: 50px; background-color: $gray;
+    &.on{background-color: $on; color:$white;}
+   a{display:block; width: 100%; height: 100%;}
+   &:nth-child(2){position:relative;
+   &:after,&::after{content: " "; display: block;
+    position: absolute; right: 0; top: 0; bottom: 0; margin: auto;
+    width: 0; height: 40%; border-right: 1px solid #ddd;}}
+   &:last-child a{text-indent: -15px;}
+   span{@include arrow(-45deg, -27px, 75px, 1px, 2px);}}}
+ .star{float: left; width: 50px; height: 50px; margin-left: 10px; 
+  a{display: block; width: 100%; height: 100%; padding-top: 15px; box-sizing:border-box;
+    span{display: block; width: 20px; height: 20px; margin: auto; 
+      background:url($url + 'main_icoset.png') no-repeat 0% 0% / auto 1150%;}}}
+      // background:url($url + 'main_icoset.png') no-repeat 6.5% 0% / auto 1150%;
+.inputwrap{width: 100%; height: 60px;}
+ .gosetting{float: left;
+  li{float: left; width: 194px; height: 50px;
+    border-bottom: 2px solid $inputgray; margin-right: 25px; 
+   input{float: left; width: 164px;  height: 50px; border:none;
+    background-color: transparent; color: #111; font-weight: bold;
+    font-size: 16px; line-height: 60px;}
+    a{display:block; float: left; width: 30px; height: 50px;  
+      span{display: block; width: 30px; height: 30px; margin-top: 10px; }}
+    &:nth-child(1) a span{background:url($url + 'main_icoset.png') no-repeat -1.7% 9% / auto 850%;}
+    &:nth-child(2) a span{background:url($url + 'main_icoset.png') no-repeat -1.7% 9% / auto 850%;}
+    &:nth-child(3) a span{background:url($url + 'main_icoset.png') no-repeat 6% 9% / auto 1000%;}
+    &:nth-child(4) a span{background:url($url + 'main_icoset.png') no-repeat 14% 9% / auto 1000%;}
+    &:nth-child(5) a span{background:url($url + 'main_icoset.png') no-repeat 21% 9% / auto 900%;}}}
+ .inquiry{float: right; width: 92px; height: 50px; background-color: $inputgray;
+    line-height:50px; text-align: center; color:$white; 
+    font-weight: bold; border-radius: 5px; font-size: 18px; }

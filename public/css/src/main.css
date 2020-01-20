@@ -187,4 +187,64 @@ h1 a:hover, h1 a:focus { background-size: contain; outline: none; }
 
 .main_indicator .ps > div > button { width: 100%; height: 100%; }
 
-.quickreserve { position: absolute; top: 0; left: 0; right: 0; margin: auto; z-index: 10; width: 1280px; height: 200px; margin-top: 380px; background-color: #fff; }
+.quickreserve { position: absolute; top: 0; left: 0; right: 0; margin: auto; z-index: 10; padding: 30px 40px; box-sizing: border-box; width: 1280px; height: 200px; margin-top: 380px; background-color: #fff; }
+
+.tabwrap { width: 100%; height: 50px; margin-bottom: 30px; text-align: center; line-height: 50px; }
+
+.mileage_use { float: left; width: 180px; height: 50px; margin-right: 50px; background-color: #f3f3f3; border-radius: 5px; font-weight: bold; }
+
+.mileage_use p { float: left; width: 65%; text-align: center; }
+
+.mileage_use .mileage_slide { position: relative; float: left; width: 27%; height: 16px; margin: 17px 4% 0 0; border-radius: 5px; box-shadow: inset 0 0 1px #aaa; background-color: #ddd; cursor: pointer; }
+
+.mileage_use .mileage_slide #mileage_check { overflow: hidden; position: absolute; width: 0; height: 0; border: 0; }
+
+.mileage_use .mileage_slide .slider { position: absolute; top: -5px; left: 0; width: 30px; height: 24px; background-color: #fff; border-radius: 5px; border: 1px solid #ddd; box-shadow: 0 0 5px #ccc; text-transform: uppercase; line-height: 24px; font-size: 12px; font-weight: normal; }
+
+.way { float: left; font-weight: bold; border-radius: 5px; overflow: hidden; }
+
+.way li { float: left; width: 105px; height: 50px; background-color: #f3f3f3; }
+
+.way li.on { background-color: #D60815; color: #fff; }
+
+.way li a { display: block; width: 100%; height: 100%; }
+
+.way li:nth-child(2) { position: relative; }
+
+.way li:nth-child(2):after, .way li:nth-child(2)::after { content: " "; display: block; position: absolute; right: 0; top: 0; bottom: 0; margin: auto; width: 0; height: 40%; border-right: 1px solid #ddd; }
+
+.way li:last-child a { text-indent: -15px; }
+
+.way li span { display: block; position: relative; left: 0; top: 0; z-index: 5; width: 0; height: 0; }
+
+.way li span:before { content: " "; display: inline-block; position: absolute; top: -27px; left: 75px; border: solid #777; border-width: 0 1px 1px 0; padding: 2px; transform: rotate(-45deg); }
+
+.star { float: left; width: 50px; height: 50px; margin-left: 10px; }
+
+.star a { display: block; width: 100%; height: 100%; padding-top: 15px; box-sizing: border-box; }
+
+.star a span { display: block; width: 20px; height: 20px; margin: auto; background: url("../../img/main_icoset.png") no-repeat 0% 0%/auto 1150%; }
+
+.inputwrap { width: 100%; height: 60px; }
+
+.gosetting { float: left; }
+
+.gosetting li { float: left; width: 194px; height: 50px; border-bottom: 2px solid #6d6e71; margin-right: 25px; }
+
+.gosetting li input { float: left; width: 164px; height: 50px; border: none; background-color: transparent; color: #111; font-weight: bold; font-size: 16px; line-height: 60px; }
+
+.gosetting li a { display: block; float: left; width: 30px; height: 50px; }
+
+.gosetting li a span { display: block; width: 30px; height: 30px; margin-top: 10px; }
+
+.gosetting li:nth-child(1) a span { background: url("../../img/main_icoset.png") no-repeat -1.7% 9%/auto 850%; }
+
+.gosetting li:nth-child(2) a span { background: url("../../img/main_icoset.png") no-repeat -1.7% 9%/auto 850%; }
+
+.gosetting li:nth-child(3) a span { background: url("../../img/main_icoset.png") no-repeat 6% 9%/auto 1000%; }
+
+.gosetting li:nth-child(4) a span { background: url("../../img/main_icoset.png") no-repeat 14% 9%/auto 1000%; }
+
+.gosetting li:nth-child(5) a span { background: url("../../img/main_icoset.png") no-repeat 21% 9%/auto 900%; }
+
+.inquiry { float: right; width: 92px; height: 50px; background-color: #6d6e71; line-height: 50px; text-align: center; color: #fff; font-weight: bold; border-radius: 5px; font-size: 18px; }

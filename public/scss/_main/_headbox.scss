@@ -3,7 +3,7 @@ $url: '../../img/header/';
 	width: 100%; height: 125px;}
  .innerarea{width: 1180px; height: 100%; margin: auto;}
 
-.upperhead{width: 100%; height: 40px; background-color: #f7f7f7; 
+.upperhead{width: 100%; height: 40px; background-color: $headgray; 
  	line-height: 40px; font-size: 13px; font-weight: bold;}
  .link_menu{float: left; width: 270px; height: 100%;
   li{float: left; position:relative;
