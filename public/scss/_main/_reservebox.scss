@@ -1,16 +1,16 @@
 $url: '../../img/';
 $slideUrl: '../../img/main_slide/';
 
-.main_slide{width: 100%; height: 50vh; min-height: 300px; background-color: #f00;
+.main_slide{width: 100%; height: 50vh; min-height: 300px;
  >ul{position:relative; width: 100%; height: 100%;
  >li{position:absolute; width: 100%; height: 100%;
- 	&:nth-child(1){background:url($slideUrl + 'slide_01.jpeg') no-repeat 50% 50% / 100% auto;
+ 	&:nth-child(1){background:url($slideUrl + 'slide_01.jpeg') no-repeat 50% 50% / cover;
  		z-index: 1;}
- 	&:nth-child(2){background:url($slideUrl + 'slide_02.jpeg') no-repeat 50% 50% / 100% auto;}
- 	&:nth-child(3){background:url($slideUrl + 'slide_03.jpeg') no-repeat 50% 50% / 100% auto;}
- 	&:nth-child(4){background:url($slideUrl + 'slide_04.jpeg') no-repeat 50% 50% / 100% auto;}
- 	&:nth-child(5){background:url($slideUrl + 'slide_05.jpeg') no-repeat 50% 50% / 100% auto;}
- 	&:nth-child(6){background:url($slideUrl + 'slide_06.jpeg') no-repeat 50% 50% / 100% auto;}
+ 	&:nth-child(2){background:url($slideUrl + 'slide_02.jpeg') no-repeat 50% 50% / cover;}
+ 	&:nth-child(3){background:url($slideUrl + 'slide_03.jpeg') no-repeat 50% 50% / cover;}
+ 	&:nth-child(4){background:url($slideUrl + 'slide_04.jpeg') no-repeat 50% 50% / cover;}
+ 	&:nth-child(5){background:url($slideUrl + 'slide_05.jpeg') no-repeat 50% 50% / cover;}
+ 	&:nth-child(6){background:url($slideUrl + 'slide_06.jpeg') no-repeat 50% 50% / cover;}
  a{display: block; width: 100%; height: 100%;}}}}
 
 .main_indicator{position: absolute; top:358px; left: 0; right: 0; margin: auto;	z-index: 20;
@@ -68,8 +68,8 @@ $slideUrl: '../../img/main_slide/';
     font-size: 16px; line-height: 60px;}
     a{display:block; float: left; width: 30px; height: 50px;  
       span{display: block; width: 30px; height: 30px; margin-top: 10px; }}
-    &:nth-child(1) a span{background:url($url + 'main_icoset.png') no-repeat -1.7% 9% / auto 850%;}
-    &:nth-child(2) a span{background:url($url + 'main_icoset.png') no-repeat -1.7% 9% / auto 850%;}
+    &:nth-child(1) a span{background:url($url + 'main_icoset.png') no-repeat -2% 9% / auto 850%;}
+    &:nth-child(2) a span{background:url($url + 'main_icoset.png') no-repeat -2% 9% / auto 850%;}
     &:nth-child(3) a span{background:url($url + 'main_icoset.png') no-repeat 6% 9% / auto 1000%;}
     &:nth-child(4) a span{background:url($url + 'main_icoset.png') no-repeat 14% 9% / auto 1000%;}
     &:nth-child(5) a span{background:url($url + 'main_icoset.png') no-repeat 21% 9% / auto 900%;}}}

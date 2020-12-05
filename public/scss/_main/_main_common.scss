@@ -1,6 +1,6 @@
 $url: '../../img/bg/';
-
-#wrap{width: 100%; min-width: 1180px; height: auto; background-color: #fff;}
+$iconUrl: '../../img/';
+#wrap{width: 100%; min-width: 1280px; height: auto; background-color: #fff;}
 
 
 
@@ -13,18 +13,56 @@ $url: '../../img/bg/';
   &.on{padding: 5px; box-sizing:border-box; color: #fff;
   	a{background-color: $on; line-height: 40px;}}
    a{display: block; width: 100%; height: 100%;
-   line-height: 50px; text-align: center; font-weight: bold;}}}}
-#reserveBox{width: 100%; height: 730px; 
-	padding:125px 0; box-sizing:border-box; background-color: #f0f0f0;}
+	 line-height: 50px; text-align: center; font-weight: bold;}}}}
+	 
+.section {padding-top: 150px; box-sizing: border-box; text-align: center;
+	h3 {margin-bottom: 20px; font-size: 50px;}
+	p {margin-bottom: 40px; font-size: 20px;}
+}
 
+#reserveBox{width: 100%; min-height: 730px; height: 100vh;
+	padding:125px 0; box-sizing:border-box; background-color: #f0f0f0;}
+.reserve {max-width: 1200px; height: 70px; margin: auto; padding: 40px; background-color: #fff;
+	.gosetting{
+		li{
+			&:nth-child(2) a span{background:url($iconUrl + 'main_icoset.png') no-repeat -2% 9% / auto 850%;}
+			&:nth-child(3) a span{background:url($iconUrl + 'main_icoset.png') no-repeat -2% 9% / auto 850%;}
+			&:nth-child(4) a span{background:url($iconUrl + 'main_icoset.png') no-repeat 6% 9% / auto 1000%;}}}
+	.helpText {display: flex; margin-top: 15px; 
+		p {font-size: 15px;}
+		.exampleText {margin-left: 520px; font-weight: bold;}}
+	.inquiry {width: 100px;}
+}
 
 
 #inquiryBox{width: 100%; height: 1020px; 
 	background:url($url + 'bg_section02.jpg') no-repeat 50% 50% / cover;}
 #checkinBox{width: 100%; height: 1020px; 
 	background:url($url + 'bg_section03.jpg') no-repeat 50% 50% / cover;}
+
+
+.checkin {
+	max-width: 1200px;
+	margin: auto;
+	background-color: #fff;
+	padding: 40px;
+	// .gosetting{
+	// 	li{
+	// 		&:nth-child(2) a span{background:url($iconUrl + 'main_icoset.png') no-repeat -2% 9% / auto 850%;}
+	// 		&:nth-child(3) a span{background:url($iconUrl + 'main_icoset.png') no-repeat -2% 9% / auto 850%;}
+	// 		&:nth-child(4) a span{background:url($iconUrl + 'main_icoset.png') no-repeat 6% 9% / auto 1000%;}}}
+}
+
 #timeBox{width: 100%; height: 810px; 
 	background:url($url + 'bg_section04.jpg') no-repeat 50% 50% / cover;}
+
+
+.timeBox {
+	max-width: 1200px;
+	margin: auto;
+	background-color: #fff;
+	padding: 40px;
+}
 #eventBox{width: 100%; height: 1670px; 
 	background:url($url + 'bg_section05.jpg') no-repeat 50% 50% / cover;}
 #footBox{width: 100%; height: 480px; background-color: #f0f0f0;}
